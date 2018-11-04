@@ -87,7 +87,7 @@ CREATE TABLE `sections_price` (
   `begin_dttm` TIME NOT NULL,
   `end_dttm` TIME NOT NULL,
   `type` VARCHAR(45) NOT NULL,
-  `price` DOUBLE,
+  `price` INT,
   PRIMARY KEY (`sections_price_id`, `section_id`, `begin_dttm`, `end_dttm`, `type`),
   FOREIGN KEY (`section_id`) REFERENCES `sections` (`section_id`)
 );
